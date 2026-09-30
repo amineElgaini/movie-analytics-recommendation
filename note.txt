@@ -1,0 +1,24 @@
+docker run -d --name movie-mongo -p 27017:27017 -v movie_mongo_data:/data/db mongo:7
+docker ps
+--------------
+SalePrice ← built from real-world sale, not from other columns → correlation with GrLivArea etc. = good, use it.
+high_engagement ← built directly from vote_count → correlation with vote_count = leakage, exclude it.
+
+I should not use high correlated features with vote_count it's a cheat
+
+why we use box-plot outliers:
+    choose model
+    scaling descision
+    clustring problem pull it solution: scaling and log
+    top 25% is the high_engagement based on outliers
+
+--------------
+plot 1: vote average is fine
+plot 2: popularity needs log()
+plot 3: genres: Count Encoding, Group into "Other", Leaving them as-is (One-Hot Encoding), Do Nothing (for Tree Models)
+plot 4: group "old decades" cause they are less
+plot 5: runtime categories (short / medium / long)
+plot 6: relationship(ROI = engagment), I learned about the log to make x = y
+plot 7: popularity and vote_count have not relation so we could use popularity and of course vote_count would not be used cause it's data leakeage
+plot 8: box plot show outliers to be handled using log, for vote we don't use mean instead we use top 25%
+plot 9: correlation
