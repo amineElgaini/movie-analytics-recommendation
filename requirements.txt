@@ -4,3 +4,5 @@ pandaspymongo
 pymongo
 matplotlib
 seaborn
+streamlit
+plotly
