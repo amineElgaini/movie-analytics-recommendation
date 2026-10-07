@@ -1,3 +1,6 @@
+# Architecture — Movie Intelligence
+
+```mermaid
 flowchart TD
     A[TMDB API] -->|Requests<br/>pagination, retry, rate-limit| B[Extraction<br/>src/extract.py]
     B -->|JSON brut| C[(data/raw/)]
@@ -43,3 +46,4 @@ flowchart TD
         N
         M
     end
+```
