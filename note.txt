@@ -22,3 +22,7 @@ plot 6: relationship(ROI = engagment), I learned about the log to make x = y
 plot 7: popularity and vote_count have not relation so we could use popularity and of course vote_count would not be used cause it's data leakeage
 plot 8: box plot show outliers to be handled using log, for vote we don't use mean instead we use top 25%
 plot 9: correlation
+--------------
+docker compose up airflow-init
+
+docker compose up -d

@@ -1,8 +1,11 @@
 requests
 python-dotenv
-pandaspymongo
+pandas
 pymongo
 matplotlib
 seaborn
 streamlit
 plotly
+joblib
+scipy
+scikit-learn==1.9.1

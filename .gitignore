@@ -1,4 +1,7 @@
-.env
-data/raw/
-__pycache__/
 .venv/
+__pycache__/
+*.pyc
+data/raw/
+airflow_home/
+.git/
+.env
