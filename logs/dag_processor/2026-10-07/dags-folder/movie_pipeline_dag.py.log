@@ -10,3 +10,6 @@
 {"timestamp":"2026-10-07T00:05:35.897873","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/movie_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2026-10-07T00:06:06.221246","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/movie_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2026-10-07T00:06:36.615988","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/movie_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2026-10-07T00:07:06.785608","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/movie_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2026-10-07T00:07:37.082407","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/movie_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2026-10-07T00:08:07.228331","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/movie_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag"}
