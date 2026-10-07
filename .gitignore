@@ -1,7 +1,29 @@
+# Environment & secrets
+.env
 .venv/
+venv/
+
+# Python
 __pycache__/
 *.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Data (raw especially — keep only processed if you want, or exclude both and document how to regenerate)
 data/raw/
+
+# Airflow
 airflow_home/
-.git/
-.env
+logs/
+plugins/
+*.log
+
+# Docker
+.dockerignore
+
+# Conda / IDE
+.idea/
+.vscode/
+
+# Jupyter
+*.egg-info/
