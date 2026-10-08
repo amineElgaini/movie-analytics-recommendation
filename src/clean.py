@@ -22,6 +22,7 @@ def load_raw_movies(raw_dir="data/raw/movies"):
             "popularity": m.get("popularity"),
             "vote_average": m.get("vote_average"),
             "vote_count": m.get("vote_count"),
+            "poster_path": m.get("poster_path")
         })
     return pd.DataFrame(rows)
 

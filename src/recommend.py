@@ -4,7 +4,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 def load_recommendation_data():
-    df = pd.read_pickle("data/processed/movies_clustered.pkl")
+    df = pd.read_pickle("data/processed/movies_final.pkl")
     tfidf_matrix = sparse.load_npz("models/tfidf_matrix.npz")
     return df, tfidf_matrix
 
@@ -21,6 +21,6 @@ def recommend(title, df, tfidf_matrix, n=5):
     similar_idx = sims.argsort()[::-1]
     similar_idx = [i for i in similar_idx if i != idx][:n]
 
-    results = df.iloc[similar_idx][["title", "genres", "year"]].copy()
+    results = df.iloc[similar_idx][["title", "genres", "year", "poster_path"]].copy()
     results["similarity"] = sims[similar_idx].round(3)
     return results.reset_index(drop=True)

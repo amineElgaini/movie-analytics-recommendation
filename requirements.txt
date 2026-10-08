@@ -8,4 +8,5 @@ streamlit
 plotly
 joblib
 scipy
-scikit-learn==1.9.1pytest
+scikit-learn==1.9.1
+pytest
